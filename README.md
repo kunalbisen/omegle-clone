@@ -34,7 +34,18 @@ npm start
 ### 4. Your app will be running at http://localhost:3000
 
 ## How It Works
-### 1. Users visit the website and get paired with a random stranger.
-### 2. The app uses WebSockets (Socket.io) to establish a peer-to-peer video chat connection.
-### 3. If a user disconnects, the system will search for a new match.
-### 4. Built-in moderation and security measures ensure safe interactions.
+1. Users visit the website and get paired with a random stranger.
+2. The app uses WebSockets (Socket.io) to establish a peer-to-peer video chat connection.
+3. If a user disconnects, the system will search for a new match.
+4. Built-in moderation and security measures ensure safe interactions.
+
+## Project Structure
+```bash
+/omegle-clone
+│── /public       # Static assets (CSS, JS)
+│── /views        # EJS templates
+│── /routes       # Express routes
+│── /socket       # WebSocket logic
+│── app.js        # Main server file
+│── package.json  # Dependencies & scripts
+
